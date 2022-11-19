@@ -15,5 +15,5 @@ const newElements = ingredients.map((ingridientName) => {
 	newChildEl.textContent = ingridientName;
 	return newChildEl;
 });
-// console.log(newElements);
+
 parentEl.append(...newElements);

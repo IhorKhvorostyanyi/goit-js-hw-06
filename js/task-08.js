@@ -19,9 +19,14 @@ function handleSubmit(event) {
 		return;
 	}
 
-	const formElements = formEl.elements;
+	const formElements = {
+		email: formEl.elements.email.value,
+		password: formEl.elements.password.value,
+	};
+	formEl.elements;
+
 	console.log(
-		`Email: ${formElements[email].value}, Password: ${formElements[password].value}`
+		`Email: ${formElements.email}, Password: ${formElements.password}`
 	);
 	event.currentTarget.reset();
 }
